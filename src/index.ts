@@ -1,5 +1,5 @@
 import type { Plugin } from "@elizaos/core";
-import { routeQueries } from "./actions/router.ts";
+import { routeQueries } from "./actions/router.js";
 
 // Simple terminal output
 console.log("\n===============================");
@@ -13,10 +13,10 @@ console.log("Author    : https://x.com/cloudre01");
 console.log("===============================\n");
 
 export const somPlugin: Plugin = {
-    name: "som",
-    description: "State of Mika integration plugin for ElizaOS",
-    actions: [routeQueries],
-    evaluators: [],
-    providers: [],
+  name: "som",
+  description: "State of Mika integration plugin for ElizaOS",
+  actions: [routeQueries],
+  evaluators: [],
+  providers: [],
 };
 export default somPlugin;
